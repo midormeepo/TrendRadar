@@ -1,6 +1,6 @@
 app:
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
-  show_version_update: true # 控制显示版本更新提示，如果 false，则不接受新版本提示
+  show_version_update: false # 控制显示版本更新提示，如果 false，则不接受新版本提示
 
 crawler:
   request_interval: 1000 # 请求间隔(毫秒)
@@ -34,7 +34,7 @@ notification:
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
 
   silent_push:
-    enabled: false  # 是否启用静默推送模式，如果 true，则启用
+    enabled: true  # 是否启用静默推送模式，如果 true，则启用
     # 因为我们白嫖的 github 服务器执行时间不稳定，所以时间范围要根据实际尽可能大一点，留足 2 小时
     # 如果你想寻求稳定的按时的推送，建议通过 docker 部署在个人的服务器上
     time_range:
